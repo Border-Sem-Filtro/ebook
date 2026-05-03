@@ -14,7 +14,7 @@
   --page-max: 1180px;
   --content-pad: clamp(20px, 5vw, 72px);
   --section-pad: clamp(72px, 12vw, 180px);
-  --separator-min-width: 960px;
+  --separator-min-width: 1200px;
   --radius-sm: 8px;
   --shadow-soft: 0 22px 50px rgb(0 0 0 / 18%);
 }
@@ -167,7 +167,7 @@ a:focus-visible {
 .display-hand {
   margin: 0;
   font-family: var(--font-hand);
-  font-size: clamp(1.7rem, 1.25rem + 1.8vw, 3rem);
+  font-size: clamp(1.1rem, 2.5vw, 2.25rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.28;
@@ -186,7 +186,7 @@ a:focus-visible {
 
 .body-copy {
   margin: 0;
-  font-size: clamp(0.9rem, 0.82rem + 0.25vw, 1.05rem);
+  font-size: clamp(0.75rem, 0.67rem + 0.2vw, 0.875rem);
   font-weight: 300;
   line-height: 1.5;
 }
