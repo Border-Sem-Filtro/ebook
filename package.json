@@ -1,0 +1,12 @@
+{
+  "name": "border-sem-filtro-ebook",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Landing page estatica para confirmacao do ebook Border Sem Filtro.",
+  "scripts": {
+    "start": "npx --yes http-server . -p 8080 -o /design.html",
+    "serve": "npx --yes http-server . -p 8080"
+  },
+  "devDependencies": {}
+}
+
