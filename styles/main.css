@@ -8,8 +8,8 @@
   --color-muted: #5f5f5f;
 
   --font-sans: "Open Sans", "Open Sans Hebrew", Arial, sans-serif;
-  --font-hand: "Providence Sans", "Comic Sans MS", "Segoe Print", cursive;
-  --font-signature: "Amsterdam", "Providence Sans", cursive;
+  --font-hand: "Primary Hand", "Gochi Hand", "Comic Sans MS", "Segoe Print", cursive;
+  --font-signature: "Amsterdam", "Primary Hand", "Gochi Hand", cursive;
 
   --page-max: 1180px;
   --content-pad: clamp(20px, 5vw, 72px);
@@ -19,15 +19,58 @@
 }
 
 @font-face {
-  font-family: "Providence Sans";
+  font-family: "Open Sans";
+  src: url("../assets/fonts/open-sans-300.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/open-sans-400.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/open-sans-700.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/open-sans-800.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Primary Hand";
   src: local("Providence Sans");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Amsterdam";
-  src: local("Amsterdam");
+  font-family: "Gochi Hand";
+  src: url("../assets/fonts/gochi-hand-400.woff2") format("woff2");
   font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Amsterdam";
+  src: url("../assets/fonts/amsterdam-signature.woff2") format("woff2"),
+       url("../assets/fonts/amsterdam-signature.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
 }
 
 * {
