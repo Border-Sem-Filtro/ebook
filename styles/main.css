@@ -154,12 +154,11 @@ a:focus-visible {
   line-height: 1.35;
 }
 
-.signature {
-  color: var(--color-orange);
-  font-family: var(--font-signature);
-  font-size: clamp(1.4rem, 1.05rem + 1.4vw, 2.4rem);
-  font-weight: 400;
-  line-height: 1;
+.signature-img {
+  display: block;
+  margin-left: auto;
+  height: clamp(4rem, 3.4rem + 2.7vw, 6.75rem);
+  width: auto;
 }
 
 .hero-preview {
@@ -192,18 +191,14 @@ a:focus-visible {
   line-height: 1;
 }
 
-.asset-placeholder {
+.ebook-cover {
   display: grid;
   min-height: clamp(260px, 34vw, 460px);
   place-items: center;
-  border: 2px dashed rgb(0 0 0 / 22%);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(135deg, rgb(255 255 255 / 80%), rgb(255 255 255 / 32%)),
-    repeating-linear-gradient(-45deg, rgb(239 120 0 / 10%) 0 10px, transparent 10px 22px);
-  color: var(--color-muted);
-  font-size: 0.9rem;
-  text-align: center;
+  background-image: url('../assets/images/ebook-cover.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .next-steps {
@@ -314,15 +309,6 @@ a:focus-visible {
 }
 .social-link__icon.youtube {
   background-image: url('../assets/icons/youtube.png');
-}
-
-.design-note {
-  padding: 14px 18px;
-  border-left: 4px solid var(--color-orange);
-  margin-bottom: 32px;
-  background: rgb(239 120 0 / 10%);
-  color: var(--color-ink);
-  font-size: 0.9rem;
 }
 
 @media (max-width: 760px) {
