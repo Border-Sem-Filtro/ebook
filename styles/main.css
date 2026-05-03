@@ -359,6 +359,14 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .steps-preview {
+    display: grid;
+    min-height: 100svh;
+    align-items: center;
+    padding-top: clamp(120px, 18svh, 170px);
+    padding-bottom: clamp(130px, 20svh, 190px);
+  }
+
   .next-steps {
     grid-template-columns: 1fr;
     gap: 34px;
@@ -383,6 +391,10 @@ a:focus-visible {
   .footer-preview {
     grid-template-columns: 1fr;
     align-items: start;
+  }
+
+  .quote-preview {
+    padding-top: clamp(96px, 15svh, 140px);
   }
 }
 
