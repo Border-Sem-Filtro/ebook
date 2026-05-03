@@ -258,6 +258,12 @@ Preferencia:
 
 O projeto deve ficar pronto para o humano fazer commit/push e configurar o Pages com minimo atrito.
 
+Regra de cache para deploy:
+
+- Sempre que o humano pedir para fazer commit, push ou deploy para GitHub Pages, atualizar automaticamente o cache-busting do CSS em `index.html`.
+- O link de `styles/main.css` deve receber uma versao nova na query string, por exemplo `./styles/main.css?v=YYYYMMDD-N`.
+- Nao esperar o humano lembrar disso; esta etapa faz parte obrigatoria do fluxo de publicacao.
+
 ## Protocolo Para A IA
 
 Ao iniciar trabalho neste projeto:
@@ -290,4 +296,3 @@ Preciso do mockup do ebook exportado como PNG ou WebP com fundo transparente, id
 - Confirmar descricoes exatas dos tres itens `E-MAIL`, `ACESSO`, `AVISOS`.
 - Confirmar copy final antes da publicacao.
 - Confirmar se icones serao assets do Figma ou recriados em SVG/CSS.
-
