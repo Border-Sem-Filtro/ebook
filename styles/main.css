@@ -222,8 +222,9 @@ a:focus-visible {
 .next-step__icon {
   display: grid;
   width: clamp(54px, 6vw, 76px);
-  aspect-ratio: 1;
-  place-items: center;
+  height: 84px;
+  align-items: end;
+  justify-items: center;
   margin-bottom: 18px;
   color: var(--color-orange);
 }
@@ -296,6 +297,23 @@ a:focus-visible {
   align-items: center;
   font-size: 0.95rem;
   text-transform: uppercase;
+}
+
+.social-link__icon {
+  width: 24px;
+  height: 24px;
+  overflow:hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  color: transparent;
+}
+.social-link__icon.instagram {
+  background-image: url('../assets/icons/instagram.png');
+}
+.social-link__icon.youtube {
+  background-image: url('../assets/icons/youtube.png');
 }
 
 .design-note {
