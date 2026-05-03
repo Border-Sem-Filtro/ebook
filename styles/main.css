@@ -184,6 +184,15 @@ a:focus-visible {
   text-transform: uppercase;
 }
 
+@media (max-width: 420px) {
+  #design-steps-title {
+    font-size: 24px;
+  }
+  .next-step__title {
+    font-size: 16px !important;
+  }
+}
+
 .body-copy {
   margin: 0;
   font-size: clamp(0.75rem, 0.67rem + 0.2vw, 0.875rem);
@@ -192,7 +201,7 @@ a:focus-visible {
 }
 
 .body-copy--spaced {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .hand-copy {
@@ -227,7 +236,7 @@ a:focus-visible {
 }
 
 .hero-preview .body-copy {
-  margin-top: clamp(28px, 4vw, 56px);
+  margin-top: 12px;
 }
 
 .agenda-preview {
@@ -239,11 +248,11 @@ a:focus-visible {
 
 .agenda-preview__date {
   display: block;
-  margin: 14px 0 24px;
+  margin: 12px 0 8px;
   color: var(--color-orange);
   font-family: var(--font-hand);
   font-size: clamp(2.4rem, 1.5rem + 3.8vw, 5.2rem);
-  letter-spacing: 0;
+  letter-spacing: -4px;
   line-height: 1;
   transform: scaleX(0.82);
   transform-origin: left center;
@@ -262,12 +271,15 @@ a:focus-visible {
 .next-steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(28px, 5vw, 72px);
+  column-gap: clamp(28px, 5vw, 72px);
+  row-gap: 0;
   margin-top: clamp(44px, 7vw, 88px);
 }
 
 .next-step {
   display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
   justify-items: center;
   text-align: center;
 }
@@ -348,6 +360,7 @@ a:focus-visible {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: white;
 }
 
 .social-link {
@@ -355,7 +368,9 @@ a:focus-visible {
   gap: 10px;
   align-items: center;
   font-size: 0.95rem;
+  font-weight: 400;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .social-link__icon {
@@ -441,11 +456,42 @@ a:focus-visible {
   }
 }
 
+@media (min-width: 761px) {
+  .steps-preview {
+    padding: 12em 0;
+  }
+
+  .next-step .hand-copy {
+    padding: 0 2em;
+  }
+
+  .quote-preview__content .body-copy {
+    margin-top: 48px;
+  }
+}
+
 @media (max-width: 420px) {
   :root {
     --content-pad: 18px;
   }
 
+  .signature-img {
+    height: clamp(3.6rem, 3.06rem + 2.43vw, 6.08rem);
+  }
+}
+
+@media (min-width: 421px) {
+  .break-desktop {
+    display: block;
+  }
+
+  #design-steps-title {
+    font-size: 36px;
+  }
+
+  .body-copy {
+    font-size: 14px;
+  }
 }
 
 .torn-paper-separator-1,
