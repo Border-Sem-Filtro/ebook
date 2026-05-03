@@ -53,8 +53,10 @@
 
 @font-face {
   font-family: "Primary Hand";
-  src: local("Providence Sans");
+  src: local("Providence Sans"), url("../assets/fonts/handwritten-font.ttf") format("truetype");
   font-display: swap;
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
@@ -79,7 +81,9 @@
 }
 
 html {
-  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background: var(--color-black);
   color: var(--color-ink);
   font-family: var(--font-sans);
@@ -88,7 +92,8 @@ html {
 }
 
 body {
-  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   overflow-x: hidden;
   background: var(--color-white);
@@ -164,7 +169,7 @@ a:focus-visible {
   font-family: var(--font-hand);
   font-size: clamp(1.7rem, 1.25rem + 1.8vw, 3rem);
   font-weight: 400;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   line-height: 1.28;
   text-transform: uppercase;
 }
@@ -191,10 +196,11 @@ a:focus-visible {
 }
 
 .hand-copy {
+  display: block;
   margin: 0;
   font-family: var(--font-hand);
   font-size: clamp(1rem, 0.88rem + 0.45vw, 1.35rem);
-  letter-spacing: 0.04em;
+  letter-spacing: -2px;
   line-height: 1.35;
 }
 
@@ -216,6 +222,10 @@ a:focus-visible {
   width: min(100%, 720px);
 }
 
+#design-hero-title {
+  text-transform: none;
+}
+
 .hero-preview .body-copy {
   margin-top: clamp(28px, 4vw, 56px);
 }
@@ -228,11 +238,15 @@ a:focus-visible {
 }
 
 .agenda-preview__date {
+  display: block;
   margin: 14px 0 24px;
   color: var(--color-orange);
   font-family: var(--font-hand);
   font-size: clamp(2.4rem, 1.5rem + 3.8vw, 5.2rem);
+  letter-spacing: 0;
   line-height: 1;
+  transform: scaleX(0.82);
+  transform-origin: left center;
 }
 
 .ebook-cover {
@@ -390,6 +404,10 @@ a:focus-visible {
     text-align: left;
   }
 
+  .hand-copy {
+    transform-origin: left top;
+  }
+
   .next-step__icon {
     width: 62px;
     height: 70px;
@@ -428,9 +446,6 @@ a:focus-visible {
     --content-pad: 18px;
   }
 
-  .display-hand {
-    letter-spacing: 0.08em;
-  }
 }
 
 .torn-paper-separator-1,
